@@ -9,6 +9,7 @@
 
 
 #include <iostream>
+#include <cstring>
 
 class String
 {
@@ -69,7 +70,7 @@ public:
 
     // String Substring
     String substr(size_t pos, size_t len) const;
-    
+
 
 };
 
