@@ -6,7 +6,7 @@ CXX = clang++
 EXE = application
 SOURCES_DIR = ./src
 SOURCES = main.cpp
-SOURCES += $(SOURCES_DIR)/Strings.cpp
+SOURCES += $(SOURCES_DIR)/String.cpp
 
 
 OBJ_DIR = ./object_files
