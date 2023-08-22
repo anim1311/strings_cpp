@@ -3,7 +3,11 @@
 #define DEBUG_LOG 1
 
 #if DEBUG_LOG
-    #define LOG(x) std::cout << x << std::endl
+    #warning "Debug Log is Enabled, there will be debug statments being printed"
+#endif
+
+#if DEBUG_LOG
+    #define LOG(x) std::clog << x << std::endl
 #else
     #define LOG(x)
 #endif

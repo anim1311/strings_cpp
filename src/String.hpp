@@ -7,7 +7,6 @@
 // This is for cin
 #define BUFFER_SIZE 1024
 
-
 #include <iostream>
 #include <cstring>
 
