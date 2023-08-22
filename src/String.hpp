@@ -1,11 +1,26 @@
-#pragma once
 
-#if __cplusplus < 201103L
+// This is a simple string class that I made for fun
+// It is not meant to be used in production code
+// It is meant to be used as a learning tool
+// I am not responsible for any damage caused by this code
+// Use at your own risk
+/**
+	@author Anirudh Madhusudhan
+	@version 0.1
+	@brief A simple string class
+*/
+
+#ifndef STRING_HPP
+#define STRING_HPP
+
+#if __cplusplus < 201103L // Mainly because of move semantics
     #error "This library needs at least a C++11 compliant compiler"
 #endif
 
 // This is for cin
 #define BUFFER_SIZE 1024
+
+#define DEBUG_LOG 0
 
 #include <iostream>
 #include <cstring>
@@ -44,14 +59,19 @@ public:
     // String Comparison
     bool operator==(const String& other) const;
     bool operator==(const char* other) const;
+
     bool operator!=(const String& other) const;
     bool operator!=(const char* other) const;
+    
     bool operator<(const String& other) const;
     bool operator<(const char* other) const;
+    
     bool operator>(const String& other) const;
     bool operator>(const char* other) const;
+    
     bool operator<=(const String& other) const;
     bool operator<=(const char* other) const;
+    
     bool operator>=(const String& other) const;
     bool operator>=(const char* other) const;
 
@@ -73,4 +93,5 @@ public:
 
 };
 
+#endif // STRING_HPP
 

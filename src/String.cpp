@@ -1,6 +1,6 @@
 #include <String.hpp> // My Custom Strings Implementation
 
-#define DEBUG_LOG 1
+
 
 #if DEBUG_LOG
     #warning "Debug Log is Enabled, there will be debug statments being printed"
@@ -11,6 +11,7 @@
 #else
     #define LOG(x)
 #endif
+
 
 String::String() // Default Constructor
     : m_data(nullptr), m_size(0)
